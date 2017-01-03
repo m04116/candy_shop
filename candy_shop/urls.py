@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', main.views.home),
     url(r'^item/(?P<alias>[^/]+)', main.views.item),
+    url(r'^(?P<alias>[^/]+)', main.views.get_category),
 ]
